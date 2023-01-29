@@ -1,26 +1,8 @@
 <div class="container">
-  <h2>Trending Movies</h2>
+  <h2>{{title}}</h2>
   <div class="grid">
-    <div class="col-6 md:col-3 lg:col-2">
-      <item></item>
-    </div>
-    <div class="col-6 md:col-3 lg:col-2">
-      <item></item>
-    </div>
-    <div class="col-6 md:col-3 lg:col-2">
-      <item></item>
-    </div>
-    <div class="col-6 md:col-3 lg:col-2">
-      <item></item>
-    </div>
-    <div class="col-6 md:col-3 lg:col-2">
-      <item></item>
-    </div>
-    <div class="col-6 md:col-3 lg:col-2">
-      <item></item>
-    </div>
-    <div class="col-6 md:col-3 lg:col-2">
-      <item></item>
+    <div class="col-6 md:col-3 lg:col-2" *ngFor="let movieItem of moviesItems">
+      <item [itemData]="movieItem"></item>
     </div>
   </div>
 </div>
