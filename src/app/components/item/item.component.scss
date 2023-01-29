@@ -1,6 +1,7 @@
 @import "../../../styles/colors";
 .movie-item {
   position: relative;
+  cursor: pointer;
   display: block;
   min-height: 325px;
   border-radius: 5px;
